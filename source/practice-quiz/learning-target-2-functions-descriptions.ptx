@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="lt2-practice-quiz">
+  <title>Learning Target 2: Reading Qualitative Graphs</title>
+  <objectives>
+    <ul>
+      <li>I can describe a situation given a qualitative graph with defined inputs and outputs.</li>
+    </ul>
+  </objectives>
+
+  <!-- ============================================================
+       PROBLEM 1: Filling and draining a bathtub (water vs. time)
+       ============================================================ -->
+  <page>
+    <exercise xml:id="lt2-bathtub">
+      <title>Filling and Draining a Bathtub</title>
+      <introduction>
+        <p>
+          The graph shows how much water is in a bathtub over time, starting from the moment the faucet is turned on. The input is the time in minutes and the output is the amount of water in gallons.
+        </p>
+        <image width="80%">
+          <shortdescription>Water in a bathtub versus time: it rises from 0 to 40 gallons over the first 8 minutes, stays at 40 gallons until minute 12, then drops back to 0 by minute 14.</shortdescription>
+          <description>
+            <p>
+              A graph with time in minutes on the horizontal axis (0 to 14) and water in gallons on the vertical axis (0 to 40). Starting at the origin, the line rises steeply to 30 gallons at 5 minutes, then rises more gently to 40 gallons at 8 minutes. From 8 to 12 minutes the line is horizontal at 40 gallons. From 12 to 14 minutes it drops steeply back down to 0 gallons.
+            </p>
+          </description>
+          <prefigure xmlns="https://prefigure.org" label="lt2-bathtub-graph">
+            <diagram dimensions="(520,330)" margins="(55,50,120,18)">
+              <coordinates bbox="(-0.6,-3,14.5,43)">
+                <grid-axes hticks="(0,2,14)" vticks="(0,10,40)" h-zero-label="yes">
+                  <xlabel alignment="se">Time (minutes)</xlabel>
+                  <ylabel alignment="ne">Water (gallons)</ylabel>
+                </grid-axes>
+                <polygon points="((0,0),(5,30),(8,40),(12,40),(14,0))" stroke="purple" thickness="3"/>
+                <point p="(0,0)" size="3" fill="purple"/>
+                <point p="(14,0)" size="3" fill="purple"/>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </introduction>
+
+      <task workspace="1.5in">
+        <statement>
+          <p>
+            Over what time interval is the water level rising the fastest? How does the graph help you answer this?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Compare the steepness of the rising segments. From
+            <m>0</m>
+            to
+            <m>5</m>
+            minutes the water rises from
+            <m>0</m>
+            to
+            <m>30</m>
+            gallons, a rate of
+            <m>6</m>
+            gallons per minute. From
+            <m>5</m>
+            to
+            <m>8</m>
+            minutes it rises from
+            <m>30</m>
+            to
+            <m>40</m>
+            gallons, a rate of about
+            <m>3.3</m>
+            gallons per minute (the faucet was turned down). The first segment is steeper, so the water rises fastest during the first
+            <m>5</m>
+            minutes. A steeper line means a faster rate of change.
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="1.5in">
+        <statement>
+          <p>
+            During which time interval is the amount of water not changing? What is happening to the tub then?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            From
+            <m>8</m>
+            to
+            <m>12</m>
+            minutes the graph is horizontal at
+            <m>40</m>
+            gallons, so the amount of water is not changing. The faucet is off and the tub stays full (someone is soaking in it).
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="1.75in">
+        <statement>
+          <p>
+            Find the horizontal intercept(s) of the graph. What do they tell you about the story?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            The graph meets the horizontal axis at
+            <m>(0,0)</m>
+            and
+            <m>(14,0)</m>
+            . At
+            <m>t=0</m>
+            the tub is empty, just as the faucet is turned on. At
+            <m>t=14</m>
+            minutes the tub is empty again, having finished draining. (The drain from
+            <m>12</m>
+            to
+            <m>14</m>
+            minutes is the steepest part of the whole graph, so the water leaves faster than it ever came in.)
+          </p>
+        </answer>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PROBLEM 2: A savings account (balance vs. weeks)
+       ============================================================ -->
+  <page>
+    <exercise xml:id="lt2-savings">
+      <title>A Savings Account</title>
+      <introduction>
+        <p>
+          The graph shows the balance in a student's savings account over a ten-week period. The input is the time in weeks and the output is the balance in dollars.
+        </p>
+        <image width="80%">
+          <shortdescription>A savings balance versus time: it starts at 100 dollars, rises steadily to 300 dollars by week 4, stays flat through week 5, drops sharply to 100 dollars at week 6, then rises steadily back to 300 dollars by week 10.</shortdescription>
+          <description>
+            <p>
+              A graph with time in weeks on the horizontal axis (0 to 10) and balance in dollars on the vertical axis (0 to 500). The line starts at 100 dollars at week 0 and rises steadily to 300 dollars at week 4. It is flat from week 4 to week 5. It then drops sharply to 100 dollars at week 6, and finally rises steadily back to 300 dollars at week 10.
+            </p>
+          </description>
+          <prefigure xmlns="https://prefigure.org" label="lt2-savings-graph">
+            <diagram dimensions="(520,330)" margins="(60,50,110,18)">
+              <coordinates bbox="(-0.5,-40,10.5,520)">
+                <grid-axes hticks="(0,1,10)" vticks="(0,100,500)" h-zero-label="yes">
+                  <xlabel alignment="se">Time (weeks)</xlabel>
+                  <ylabel alignment="ne">Balance (dollars)</ylabel>
+                </grid-axes>
+                <polygon points="((0,100),(4,300),(5,300),(6,100),(10,300))" stroke="purple" thickness="3"/>
+                <point p="(0,100)" size="3" fill="purple"/>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </introduction>
+
+      <task workspace="1.25in">
+        <statement>
+          <p>
+            What was the balance at the start of the ten weeks? What does this starting value (the vertical intercept) tell you?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            At week
+            <m>0</m>
+            the balance is
+            <m>\$100</m>
+            . The vertical intercept
+            <m>(0,100)</m>
+            is the amount of money already in the account when the ten-week period began.
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="1.5in">
+        <statement>
+          <p>
+            During which week does the balance go down, and what does that tell you about the story?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Between week
+            <m>5</m>
+            and week
+            <m>6</m>
+            the balance falls from
+            <m>\$300</m>
+            to
+            <m>\$100</m>
+            , a decrease of
+            <m>\$200</m>
+            . A segment that goes downward means money was taken out, so the student likely made a large purchase that week.
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="1.75in">
+        <statement>
+          <p>
+            Compare how fast the balance is growing during weeks
+            <m>0</m>
+            to
+            <m>4</m>
+            with how fast it grows during weeks
+            <m>6</m>
+            to
+            <m>10</m>
+            . How can you tell from the graph?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            In both stretches the balance climbs from
+            <m>\$100</m>
+            to
+            <m>\$300</m>
+            , a gain of
+            <m>\$200</m>
+            over
+            <m>4</m>
+            weeks, or
+            <m>\$50</m>
+            per week. The two rising segments have the same steepness, so the student is saving at the same steady rate in both stretches. (The steepest segment overall is the drop from week
+            <m>5</m>
+            to week
+            <m>6</m>
+            , but there the balance is decreasing, not growing.)
+          </p>
+        </answer>
+      </task>
+    </exercise>
+  </page>
+
+  <!-- ============================================================
+       PROBLEM 3: A mountain hike (elevation vs. distance)
+       ============================================================ -->
+  <page>
+    <exercise xml:id="lt2-hike">
+      <title>A Mountain Hike</title>
+      <introduction>
+        <p>
+          The graph shows your elevation as you walk along a hiking trail. Be careful: the input here is the distance you have hiked, in miles—not the time. The output is your elevation in feet.
+        </p>
+        <image width="80%">
+          <shortdescription>Elevation versus distance on a hike: it starts at 200 feet, climbs to 600 feet by mile 2, stays flat to mile 3, climbs steeply to 1000 feet at mile 4, then descends back to 200 feet at mile 6.</shortdescription>
+          <description>
+            <p>
+              A graph with distance in miles on the horizontal axis (0 to 6) and elevation in feet on the vertical axis (0 to 1000). The line starts at 200 feet at mile 0 and rises to 600 feet at mile 2. It is flat from mile 2 to mile 3. It then climbs steeply to 1000 feet at mile 4, and finally descends steadily back to 200 feet at mile 6.
+            </p>
+          </description>
+          <prefigure xmlns="https://prefigure.org" label="lt2-hike-graph">
+            <diagram dimensions="(520,330)" margins="(60,50,140,18)">
+              <coordinates bbox="(-0.3,-90,6.4,1090)">
+                <grid-axes hticks="(0,1,6)" vticks="(0,200,1000)" h-zero-label="yes">
+                  <xlabel alignment="se">Distance (miles)</xlabel>
+                  <ylabel alignment="ne">Elevation (feet)</ylabel>
+                </grid-axes>
+                <polygon points="((0,200),(2,600),(3,600),(4,1000),(6,200))" stroke="purple" thickness="3"/>
+                <point p="(0,200)" size="3" fill="purple"/>
+                <point p="(6,200)" size="3" fill="purple"/>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </introduction>
+
+      <task workspace="1.5in">
+        <statement>
+          <p>
+            Over which interval are you climbing most steeply? How does the graph show this?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            From mile
+            <m>3</m>
+            to mile
+            <m>4</m>
+            the elevation rises from
+            <m>600</m>
+            to
+            <m>1000</m>
+            feet, a rate of
+            <m>400</m>
+            feet per mile. From mile
+            <m>0</m>
+            to mile
+            <m>2</m>
+            it rises only
+            <m>200</m>
+            feet per mile. The segment from
+            <m>3</m>
+            to
+            <m>4</m>
+            is the steepest uphill part, so you climb most steeply there. The steeper the upward line, the faster you are gaining elevation.
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="1.5in">
+        <statement>
+          <p>
+            Where is the trail flat? What does that mean for your hike, even though you keep walking forward?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            From mile
+            <m>2</m>
+            to mile
+            <m>3</m>
+            the graph is horizontal at
+            <m>600</m>
+            feet, so your elevation does not change. You are walking along level ground (a flat ridge): you keep moving forward along the trail, but you are neither climbing nor descending.
+          </p>
+        </answer>
+      </task>
+
+      <task workspace="1.75in">
+        <statement>
+          <p>
+            Compare your elevation at the end of the hike with where you started. What does the graph tell you?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            You start at
+            <m>(0,200)</m>
+            and end at
+            <m>(6,200)</m>
+            , both at
+            <m>200</m>
+            feet. The trail climbs to a high point of
+            <m>1000</m>
+            feet at mile
+            <m>4</m>
+            and then descends. So even though you hiked
+            <m>6</m>
+            miles and gained a lot of elevation along the way, you finish at the same height as the trailhead where you began.
+          </p>
+        </answer>
+      </task>
+    </exercise>
+  </page>
+
+</worksheet>

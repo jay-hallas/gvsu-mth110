@@ -1,0 +1,506 @@
+<worksheet xml:id="lt3-practice-quiz">
+<title>Learning Target 3: Linear Patterns</title>
+<objectives>
+<ul>
+<li>I can recognize and identify key characteristics of a linear pattern represented in a table, graph, equation, or application.</li>
+<li>I can translate between different representations.</li>
+</ul>
+</objectives>
+<page>
+<exercise xml:id="lt3-pattern">
+<title>Is the Pattern Linear?</title>
+<introduction>
+<p>Consider the following pattern of blocks.</p>
+<image width="95%">
+<shortdescription>Five cases of a growing block pattern in two rows: 6, 8, 10, 12, and 14 blocks.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="lt3-pattern-blocks">
+<diagram dimensions="(660,180)" margins="5">
+<coordinates bbox="(-1,-2,48,4)">
+<repeat parameter="case=1..5">
+<repeat parameter="col=0..case+1">
+<repeat parameter="row=0..1">
+<rectangle center="(10*(case-1)+col, row)" dimensions="(0.85,0.85)" fill="mediumpurple" stroke="black"/>
+</repeat>
+</repeat>
+<label anchor="(10*(case-1)+2, -1.4)" alignment="center">
+<m>\text{Case } ${case}</m>
+</label>
+</repeat>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+</introduction>
+<task workspace="1.25in">
+<statement>
+<p>Explain why the pattern is linear.</p>
+</statement>
+<answer>
+<p>
+The cases have
+<m>6, 8, 10, 12, 14</m>
+blocks. The count increases by the same amount,
+<m>2</m>
+blocks, from each case to the next. Because the rate of change is constant, the pattern is linear.
+</p>
+</answer>
+</task>
+<task workspace="1in">
+<statement>
+<p>How many blocks will be in case 8?</p>
+</statement>
+<answer>
+<p>
+Continuing to add
+<m>2</m>
+each case: case 6 has
+<m>16</m>
+, case 7 has
+<m>18</m>
+, and case 8 has
+<m>20</m>
+blocks.
+</p>
+</answer>
+</task>
+<task workspace="1.25in">
+<statement>
+<p>
+Find a linear equation that gives the number of blocks
+<m>y</m>
+for case
+<m>x</m>
+.
+</p>
+</statement>
+<answer>
+<p>
+The number of blocks increases by
+<m>2</m>
+per case, so the slope is
+<m>2</m>
+. Working backward, case
+<m>0</m>
+would have
+<m>4</m>
+blocks, so the y-intercept is
+<m>4</m>
+. The equation is
+<m>y = 2x + 4</m>
+. Check: case
+<m>3</m>
+gives
+<m>2(3)+4 = 10</m>
+blocks, which matches.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+<page>
+<exercise xml:id="lt3-graph" workspace="1.5in">
+<title>Find the Equation of the Graph</title>
+<statement>
+<p>Given the linear graph below, find an equation that matches it. Verify that your equation is correct by checking that it matches the line at two points.</p>
+<image width="45%">
+<shortdescription>A line crossing the y-axis at 2 and passing through the point 4 comma 4.</shortdescription>
+<prefigure xmlns="https://prefigure.org" label="lt3-line-graph">
+<diagram dimensions="(300,300)" margins="5">
+<definition>f(x) = (1/2)*x + 2</definition>
+<coordinates bbox="(-1,-1,7,7)">
+<grid-axes xlabel="x" ylabel="y" hticks="(0,1,6)" vticks="(0,1,6)"/>
+<graph function="f" stroke="blue" thickness="2"/>
+<point p="(0,2)" size="4" fill="blue"/>
+<point p="(4,4)" size="4" fill="blue"/>
+</coordinates>
+</diagram>
+</prefigure>
+</image>
+<p>
+(The points
+<m>(0,2)</m>
+and
+<m>(4,4)</m>
+are marked to help you.)
+</p>
+</statement>
+<answer>
+<p>
+The line crosses the y-axis at
+<m>(0,2)</m>
+, so
+<m>b=2</m>
+. From
+<m>(0,2)</m>
+to
+<m>(4,4)</m>
+the line rises
+<m>2</m>
+and runs
+<m>4</m>
+, so the slope is
+<m>\frac{2}{4} = \frac{1}{2}</m>
+. The equation is
+<m>y = \frac{1}{2}x + 2</m>
+.
+</p>
+<p>
+Check at
+<m>(0,2)</m>
+:
+<m>\frac{1}{2}(0)+2 = 2</m>
+. Check at
+<m>(4,4)</m>
+:
+<m>\frac{1}{2}(4)+2 = 4</m>
+. Both points match, so the equation is correct.
+</p>
+</answer>
+</exercise>
+</page>
+<page>
+<exercise xml:id="lt3-table-nonlinear" workspace="1.5in">
+<title>Could This Table Be Linear?</title>
+<statement>
+<p>Determine whether the following table could represent linear change. Explain your answer in writing.</p>
+<tabular>
+<row bottom="medium">
+<cell>
+<m>x</m>
+</cell>
+<cell>
+<m>0</m>
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>2</m>
+</cell>
+<cell>
+<m>3</m>
+</cell>
+<cell>
+<m>4</m>
+</cell>
+</row>
+<row>
+<cell>
+<m>y</m>
+</cell>
+<cell>
+<m>5</m>
+</cell>
+<cell>
+<m>10</m>
+</cell>
+<cell>
+<m>20</m>
+</cell>
+<cell>
+<m>40</m>
+</cell>
+<cell>
+<m>80</m>
+</cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>
+It is not linear. As
+<m>x</m>
+increases by
+<m>1</m>
+each time,
+<m>y</m>
+changes by
+<m>+5</m>
+, then
+<m>+10</m>
+, then
+<m>+20</m>
+, then
+<m>+40</m>
+. The rate of change is not constant (the values double each step), so the table cannot represent linear change.
+</p>
+</answer>
+</exercise>
+<exercise xml:id="lt3-table-linear" workspace="1.5in">
+<title>Could This Table Be Linear?</title>
+<statement>
+<p>Determine whether the following table could represent linear change. Explain your answer in writing.</p>
+<tabular>
+<row bottom="medium">
+<cell>
+<m>x</m>
+</cell>
+<cell>
+<m>0</m>
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>2</m>
+</cell>
+<cell>
+<m>3</m>
+</cell>
+<cell>
+<m>4</m>
+</cell>
+</row>
+<row>
+<cell>
+<m>y</m>
+</cell>
+<cell>
+<m>4</m>
+</cell>
+<cell>
+<m>10</m>
+</cell>
+<cell>
+<m>16</m>
+</cell>
+<cell>
+<m>22</m>
+</cell>
+<cell>
+<m>28</m>
+</cell>
+</row>
+</tabular>
+</statement>
+<answer>
+<p>
+It could be linear. As
+<m>x</m>
+increases by
+<m>1</m>
+each time,
+<m>y</m>
+increases by
+<m>6</m>
+every time. The rate of change is constant at
+<m>6</m>
+, which is the defining characteristic of a linear pattern. (An equation would be
+<m>y = 6x + 4</m>
+.)
+</p>
+</answer>
+</exercise>
+</page>
+<page>
+<exercise xml:id="lt3-battery">
+<title>Charging a Phone Battery</title>
+<introduction>
+<p>
+The following table gives the percent charge of a phone battery
+<m>t</m>
+minutes after it is plugged in.
+</p>
+<tabular>
+<row bottom="medium">
+<cell>
+<m>t</m>
+(minutes)
+</cell>
+<cell>
+<m>0</m>
+</cell>
+<cell>
+<m>5</m>
+</cell>
+<cell>
+<m>10</m>
+</cell>
+<cell>
+<m>15</m>
+</cell>
+<cell>
+<m>20</m>
+</cell>
+</row>
+<row>
+<cell>charge (%)</cell>
+<cell>
+<m>20</m>
+</cell>
+<cell>
+<m>30</m>
+</cell>
+<cell>
+<m>40</m>
+</cell>
+<cell>
+<m>50</m>
+</cell>
+<cell>
+<m>60</m>
+</cell>
+</row>
+</tabular>
+</introduction>
+<task workspace="1.5in">
+<statement>
+<p>
+The data appears linear. Find an equation for the battery percentage
+<m>P</m>
+after
+<m>t</m>
+minutes.
+</p>
+</statement>
+<answer>
+<p>
+The charge increases by
+<m>10</m>
+percentage points every
+<m>5</m>
+minutes, a rate of
+<m>2</m>
+percent per minute. At
+<m>t=0</m>
+the charge is
+<m>20\%</m>
+. So
+<m>P = 2t + 20</m>
+.
+</p>
+</answer>
+</task>
+<task workspace="1.75in">
+<statement>
+<p>
+Suppose we later check the phone at
+<m>t = 30</m>
+minutes and find the charge is only
+<m>74\%</m>
+. Does this match the linear pattern, or does it suggest the charging may not always be linear? Explain your reasoning.
+</p>
+</statement>
+<answer>
+<p>
+The linear equation predicts
+<m>P = 2(30) + 20 = 80\%</m>
+at
+<m>t=30</m>
+. The actual charge of
+<m>74\%</m>
+is lower than the linear prediction. This suggests the charging is not always linear: as a battery fills up, charging tends to slow down, so the percentage grows more slowly than the early linear rate would predict.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+<page>
+<exercise xml:id="lt3-pool">
+<title>Draining a Pool</title>
+<introduction>
+<p>
+The amount of water, in gallons, left in a pool
+<m>t</m>
+hours after it starts being emptied is given by the function
+<m>W(t) = 16000 - 2000t</m>
+.
+</p>
+</introduction>
+<task workspace="1.5in">
+<statement>
+<p>
+Make a table showing the water left after
+<m>0</m>
+,
+<m>1</m>
+,
+<m>2</m>
+, and
+<m>3</m>
+hours.
+</p>
+</statement>
+<answer>
+<p>
+Substituting each value of
+<m>t</m>
+:
+</p>
+<tabular>
+<row bottom="medium">
+<cell>
+<m>t</m>
+(hours)
+</cell>
+<cell>
+<m>0</m>
+</cell>
+<cell>
+<m>1</m>
+</cell>
+<cell>
+<m>2</m>
+</cell>
+<cell>
+<m>3</m>
+</cell>
+</row>
+<row>
+<cell>
+<m>W</m>
+(gallons)
+</cell>
+<cell>
+<m>16000</m>
+</cell>
+<cell>
+<m>14000</m>
+</cell>
+<cell>
+<m>12000</m>
+</cell>
+<cell>
+<m>10000</m>
+</cell>
+</row>
+</tabular>
+</answer>
+</task>
+<task workspace="0.75in">
+<statement>
+<p>How much water did the pool start with?</p>
+</statement>
+<answer>
+<p>
+At
+<m>t=0</m>
+,
+<m>W(0) = 16000 - 2000(0) = 16000</m>
+gallons. This is the y-intercept of the function.
+</p>
+</answer>
+</task>
+<task workspace="1.5in">
+<statement>
+<p>When will the pool be empty?</p>
+</statement>
+<answer>
+<p>
+The pool is empty when
+<m>W(t) = 0</m>
+. Solving
+<m>0 = 16000 - 2000t</m>
+gives
+<m>2000t = 16000</m>
+, so
+<m>t = 8</m>
+. The pool will be empty after
+<m>8</m>
+hours.
+</p>
+</answer>
+</task>
+</exercise>
+</page>
+</worksheet>
